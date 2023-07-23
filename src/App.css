@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 70vw;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0px 0px 10px 0px;
+}
+
+.row-spaced {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.section-title{
+  font-size: 16px;
+  color: #0f265c;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+
+  .row-spaced,
+  .row {
+    width: 100%;
+    flex-direction: column;
+    justify-content: baseline;
+  }
+
+  .primary-button {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+  .input-field {
+    width: 100%;
+  }
+}

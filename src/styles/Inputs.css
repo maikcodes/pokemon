@@ -1,0 +1,28 @@
+.input-container {
+  box-sizing: border-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4px;
+  color: #7e7e7e;
+  border: 1px solid var(--light-gray);
+}
+
+.icon {
+  display: flex;
+  padding: 10px;
+  min-width: 20px;
+  justify-content: right;
+  align-items: center;
+  color: #0f265c;
+}
+
+.input-field {
+  font: inherit;
+  border: 0;
+  padding: 12px 25px;
+  margin: 0;
+  font-size: 16px;
+  margin: 2px;
+  box-sizing: border-box;
+  width: 100%;
+}
