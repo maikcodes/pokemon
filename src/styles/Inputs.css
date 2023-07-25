@@ -8,21 +8,20 @@
 }
 
 .icon {
-  display: flex;
-  padding: 10px;
-  min-width: 20px;
-  justify-content: right;
   align-items: center;
-  color: #0f265c;
+  color: var(--dark-blue-500);
+  display: flex;
+  justify-content: right;
+  min-width: 20px;
+  padding: 10px;
 }
 
 .input-field {
-  font: inherit;
   border: 0;
-  padding: 12px 25px;
-  margin: 0;
-  font-size: 16px;
-  margin: 2px;
   box-sizing: border-box;
+  font: inherit;
+  font-size: 16px;
+  margin: 0;
+  padding: 10px 10px;
   width: 100%;
 }

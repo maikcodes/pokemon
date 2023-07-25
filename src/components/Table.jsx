@@ -1,6 +1,9 @@
 import '../styles/Table.css'
 import useWindowDimensions from '../hooks/useWindowDimensions';
-
+import { IconButton } from './Buttons';
+import { AiFillEdit } from 'react-icons/ai'
+import { RiDeleteBin2Fill } from 'react-icons/ri'
+import { GiBroadsword, GiCheckedShield } from 'react-icons/gi'
 
 function Table() {
 
@@ -43,17 +46,21 @@ function Table() {
                             tableData.map((row, index) => (
                                 <tr key={index}>
                                     <td>{row.name}</td>
-                                    <td><img style={imageStyle} src={row.url} alt={`Image of ${row.name}_${row.id}`} /></td>
                                     <td>
-                                        <div className='row'>
-                                            <p>Attack: {row.attack}</p>
-                                            <p>Defense: {row.defense}</p>
+                                        <div className='row-center'>
+                                            <img className='' style={imageStyle} src={row.url} alt={`Image of ${row.name}_${row.id}`} />
                                         </div>
                                     </td>
                                     <td>
-                                        <div className="row">
-                                            <button>Edit</button>
-                                            <button>Delete</button>
+                                        <div className='row-center'>
+                                            <p className='center'><GiBroadsword /> {row.attack}</p>
+                                            <p className='center'><GiCheckedShield /> {row.defense}</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="row-center">
+                                            <IconButton icon={<AiFillEdit />} onClick={() => { }} />
+                                            <IconButton icon={<RiDeleteBin2Fill />} onClick={() => { }} />
                                         </div>
                                     </td>
                                 </tr>
@@ -81,13 +88,21 @@ function Table() {
                         tableData.map((row, index) => (
                             <tr key={index}>
                                 <td>{row.name}</td>
-                                <td><img style={imageStyle} src={row.url} alt={`Image of ${row.name}_${row.id}`} /></td>
-                                <td>{row.attack}</td>
-                                <td>{row.defense}</td>
                                 <td>
-                                    <div className="row">
-                                        <button>Edit</button>
-                                        <button>Delete</button>
+                                    <div className='row-center'>
+                                        <img style={imageStyle} src={row.url} alt={`Image of ${row.name}_${row.id}`} />
+                                    </div>
+                                </td>
+                                <td><div className='row-center'>{row.attack}</div></td>
+                                <td><div className='row-center'>{row.defense}</div></td>
+                                <td>
+                                    <div className="row-spaced">
+                                        <div className='col-12'>
+                                            <IconButton icon={<AiFillEdit />} onClick={() => { }} />
+                                        </div>
+                                        <div className='col-12'>
+                                            <IconButton icon={<RiDeleteBin2Fill />} onClick={() => { }} />
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
