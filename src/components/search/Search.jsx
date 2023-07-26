@@ -1,5 +1,5 @@
-import '../styles/Search.css'
-import { InputIcon } from "./Inputs";
+import './Search.css'
+import { InputIcon } from "../inputs/input/Inputs";
 import { ImSearch } from 'react-icons/im'
 
 

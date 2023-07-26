@@ -1,4 +1,6 @@
-import '../styles/Buttons.css'
+import './Buttons.css'
+import PropTypes from 'prop-types';
+
 
 export function PrimaryButton(props) {
     const { icon: icon, text, onClick } = props;
@@ -26,4 +28,21 @@ export function IconButton({ icon: icon, onClick }) {
             {icon}
         </button>
     )
+}
+
+PrimaryButton.propTypes = {
+    icon: PropTypes.node.isRequired,
+    text: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+}
+
+SecondaryButton.propTypes = {
+    icon: PropTypes.node.isRequired,
+    text: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+}
+
+IconButton.propTypes = {
+    icon: PropTypes.node.isRequired,
+    onClick: PropTypes.func.isRequired,
 }

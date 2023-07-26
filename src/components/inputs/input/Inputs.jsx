@@ -1,6 +1,7 @@
-import '../styles/Inputs.css'
+import PropTypes from 'prop-types'
+import './Inputs.css'
 
-export function Input({placeholder}) {
+export function Input({ placeholder }) {
   return (
     <div className="input-container">
       <input className="input-field" type="text" placeholder={placeholder} />
@@ -18,3 +19,11 @@ export function InputIcon(props) {
   )
 }
 
+Input.propTypes = {
+  placeholder: PropTypes.string
+}
+
+InputIcon.propTypes = {
+  placeholder: PropTypes.string,
+  icon: PropTypes.func.isRequired
+}

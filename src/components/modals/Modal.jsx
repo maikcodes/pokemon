@@ -1,6 +1,7 @@
-import '../styles/Modal.css'
+import './Modal.css'
 import { ImCross } from 'react-icons/im'
-import { IconButton } from './Buttons';
+import { IconButton } from '../buttons/Buttons';
+import PropTypes from 'prop-types'
 
 function Modal({ handleClose, show, children, title }) {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
@@ -22,6 +23,13 @@ function Modal({ handleClose, show, children, title }) {
       </div>
     </div>
   );
+}
+
+Modal.propTypes = {
+  handleClose: PropTypes.func.isRequired,
+  show: PropTypes.bool.isRequired,
+  children: PropTypes.any.isRequired,
+  title: PropTypes.string.isRequired
 }
 
 export default Modal
