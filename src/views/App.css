@@ -1,6 +1,8 @@
 :root {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  --dark-blue-400: #183b8b;
   --dark-blue-500: #0f265c;
+  --dark-blue-600: #0b1d47;
 }
 
 [class*="col-"] {
@@ -172,9 +174,13 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--dark-blue-500);
+  color: var(--dark-blue-400);
   font-size: 20px;
   margin: auto;
+}
+
+.i-button:hover {
+  color: var(--dark-blue-600);
 }
 
 .info-table {
@@ -211,7 +217,7 @@ button:hover {
 }
 
 .max-width {
-  max-width: 100%; 
+  max-width: 100%;
   overflow: hidden;
   word-wrap: break-word;
 }
