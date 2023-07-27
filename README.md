@@ -113,7 +113,7 @@ If you are not familiar with json-server check some tutorial.
 ```
 
 2. Start json-server.
-Note the PORT, change the port according to your needs (and check for the port in [PokemonRepository.js](https://github.com/maikcodes/pokemon/blob/main/src/views/pokemon/PokemonRepository.js))
+Note the PORT, change the port according to your needs (and check for the port in [PokemonRepository.js](https://github.com/maikcodes/pokemon-crud/blob/main/src/views/pokemon/PokemonRepository.js))
 
 ```powershell
 npx json-server --port 3001 --watch db.json
