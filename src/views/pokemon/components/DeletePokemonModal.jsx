@@ -11,7 +11,8 @@ function DeletePokemonModal(props) {
 
             <form onSubmit={handleSubmit}>
                 <div className="col-s-12 col-12">
-                    <p className='max-width'>Are yo sure to want to delete pokemon {name}? <br />This action is irreversible</p>
+                    <p className='max-width'>Are you sure you want to delete the {name} pokemon? 
+                    <br />This action is irreversible</p>
                 </div>
 
                 <div className="col-s-12 col-12">
