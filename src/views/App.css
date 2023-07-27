@@ -36,7 +36,6 @@
 
   [class*="button-"] {
     width: 100%;
-    margin: 0 0;
   }
 
   .col-s-1 {
@@ -85,6 +84,10 @@
     margin: auto;
     width: 70em;
     max-width: 900px;
+  }
+
+  [class*="button-"] {
+    margin-left: 10px;
   }
 
   .center-vertical {
@@ -205,4 +208,10 @@ button:hover {
 }
 .info-table tr:last-child td:last-child {
   border-bottom-right-radius: 4px;
+}
+
+.max-width {
+  max-width: 100%; 
+  overflow: hidden;
+  word-wrap: break-word;
 }

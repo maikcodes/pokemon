@@ -1,15 +1,11 @@
-import './Search.css'
-import { InputIcon } from "../inputs/input/Inputs";
 import { ImSearch } from 'react-icons/im'
+import { InputIcon } from "../inputs/input/Inputs";
 
-
-function Search() {
+function Search({handleOnChange}) {
     return (
-        <>
-            <div className='col-s-12'>
-                <InputIcon placeholder='Search ...' icon={ImSearch} />
-            </div>
-        </>
+        <div className='col-s-12'>
+            <InputIcon placeholder='Search ...' icon={ImSearch}  onChange={handleOnChange}/>
+        </div>
     )
 }
 

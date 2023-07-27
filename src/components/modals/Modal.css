@@ -29,6 +29,8 @@
 
 .modal-header {
   background-color: #e9ecf3;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .modal-header,
