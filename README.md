@@ -2,7 +2,7 @@
 
 Hi there👋 I'm `maikcodes`.
 
-This project is React.js and CSS-only.
+This project is React and CSS-only.
 
 You can clone this repository and make changes as you wish
 
